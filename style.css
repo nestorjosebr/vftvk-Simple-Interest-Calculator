@@ -1,4 +1,25 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+  background-color: white;
+}
+
+p {
+  font-family: arial;
+  font-size: 15px;
+  color: white;
+}
+
+div {
+  background-color: white;
+  width: 300px;
+  color: black;
+}
+
+
+
+#result{
+  font-family: arial;
+  font-size: 20px;
+  color: black;	
+}
 
 
