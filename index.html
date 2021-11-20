@@ -1,16 +1,60 @@
-<html>
+<!DOCTYPE html>
+<html>   
     <head>
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="style.css">
+    <h1>Simple Interest Calculator</h1>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <title>Simple Interest Calculator</title> 
+    
+    
+		<fieldset class="formato1">
+		        <label for="Amount">Amount :</label>
+                        
+		        <input type="number" placeholder="No Zero" id="principal" name="principal">
+    
+            <br></br>
+    
+		        <label for="Interest Rate ">Interest Rate :</label>
+		         
+            <input type="range" min="0" max="20" value="1" step="0.5" id="myRange" class="slider">
+            <span id="value">
+            </span>      
+            <br></br>    
+            No. of Years:              
+            <select id="years">
+                 <option value = "1">1</option>
+                 <option value = "2">2</option>
+                 <option value = "3">3</option>
+                 <option value = "4">4</option>
+                 <option value = "5">5</option>
+                 <option value = "6">6</option>
+                 <option value = "7">7</option>
+                 <option value = "8">8</option>
+                 <option value = "9">9</option>
+                 <option value = "10">10</option>
+            </select>
+            <br></br>
+		<!--Ahora hay que colocar un boton que haga los calculos
+    al final de form-->
+		<!--Cuando un usuario hace clic ahi, el form data es submitido al back-end program para procesarlo-->
+		        <button onclick="compute_Interest()">
+		          Compute Interest
+		      	</button>
+            <span id="result">
+             
+            </span>
+              
+		</fieldset>    
+    <script src="script.js"></script>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
     </body>
+      
+      <footer>
+        &#169; This Calculator belongs to Nestor Brito
+      </footer>
+	
+	
 </html>
+	
